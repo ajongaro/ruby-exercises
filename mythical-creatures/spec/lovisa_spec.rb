@@ -1,5 +1,5 @@
 require 'rspec'
-require './lib/lovisa'
+require '../lib/lovisa'
 
 RSpec.describe Lovisa do
   it 'she has a title' do
@@ -15,17 +15,17 @@ RSpec.describe Lovisa do
   end
 
   it "she is more than brilliant" do
-    loivsa = Lovisa.new('Lovisa the friend', ['brilliant', 'kind'])
-    expect(loivsa.characteristics).to eq(['brilliant', 'kind'])
-    expect(loivsa.brilliant?).to eq(true)
-    expect(loivsa.brilliant?).to be true
-    expect(loivsa.kind?).to eq(true)
-    expect(loivsa.kind?).to be true
+    lovisa = Lovisa.new('Lovisa the friend', ['brilliant', 'kind'])
+    expect(lovisa.characteristics).to eq(['brilliant', 'kind'])
+    expect(lovisa.brilliant?).to eq(true)
+    expect(lovisa.brilliant?).to be true
+    expect(lovisa.kind?).to eq(true)
+    expect(lovisa.kind?).to be true
   end
 
   it 'she says sparkly stuff' do
-    loivsa = Lovisa.new('Lovisa the Loved')
-    expect(loivsa.say('Wonderful!')).to eq('**;* Wonderful! **;*')
-    expect(loivsa.say('You are doing great!')).to eq('**;* You are doing great! **;*')
+    lovisa = Lovisa.new('Lovisa the Loved')
+    expect(lovisa.say('Wonderful!')).to eq('**;* Wonderful! **;*')
+    expect(lovisa.say('You are doing great!')).to eq('**;* You are doing great! **;*')
   end
 end

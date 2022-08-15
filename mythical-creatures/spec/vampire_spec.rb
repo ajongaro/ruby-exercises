@@ -1,5 +1,5 @@
 require 'rspec'
-require './lib/vampire'
+require '../lib/vampire'
 
 RSpec.describe Vampire do
   it 'has a name' do
@@ -32,6 +32,11 @@ RSpec.describe Vampire do
     vampire = Vampire.new('Elizabeth Bathory')
 
     vampire.drink
+    expect(vampire.thirsty).to be false
+  end
+
+  it 'can be told if thirsty' do
+    vampire = Vampire.new('Bizmark', 'Rocky', false)
     expect(vampire.thirsty).to be false
   end
 end

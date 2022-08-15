@@ -5,7 +5,7 @@ RSpec.describe Narwhal do
   it 'exists' do
     nancy = Narwhal.new({cute: true, weight: 500, name: "Nancy"})
 
-    expeec(nancy).to be_an_instance_of(Narwhal)
+    expect(nancy).to be_an_instance_of(Narwhal)
   end
 
   it 'has a name' do
@@ -20,7 +20,7 @@ RSpec.describe Narwhal do
     expect(nancy.weight).to eq(500)
   end
 
-  it 'has is cute' do
+  it 'is cute' do
     nancy = Narwhal.new({cute: true, weight: 500, name: "Nancy"})
 
     expect(nancy.cute?).to eq(true)
