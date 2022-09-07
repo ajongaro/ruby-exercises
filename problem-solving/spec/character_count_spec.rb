@@ -1,5 +1,6 @@
-RSpec.describe 'character count' do
+require './lib/character_count.rb'
 
+RSpec.describe CharacterCount do
   it 'can count a small word' do
     cc = CharacterCount.new
 
