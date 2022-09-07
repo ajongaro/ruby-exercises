@@ -1,5 +1,4 @@
-require 'rspec'
-require_relative '../lib/costume'
+require 'costume'
 
 RSpec.describe Costume do
   it 'has a style' do
