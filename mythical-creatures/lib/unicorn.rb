@@ -8,15 +8,11 @@ class Unicorn
   end
 
   def silver?
-    if @color == 'silver'
-      true
-    else
-      false
-    end
+    return true if @color == 'silver'
+    false
   end
 
   def say(x)
     "**;* " + x + " **;*"
   end
-
 end

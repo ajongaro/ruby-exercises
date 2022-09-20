@@ -17,7 +17,6 @@ class Medusa
   end
 end
 
-
 class Person
   attr_accessor :name, :stoned, :unstone
 
@@ -34,9 +33,6 @@ class Person
     old_victim.first.stoned = false
     old_victim.shift
   end
-
-
-
 end
 
 

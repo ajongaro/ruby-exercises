@@ -20,7 +20,7 @@ class Wizard
   end
 
   def cast
-    casted += 1
+    self.casted += 1
     "MAGIC MISSILE!"
   end
 end

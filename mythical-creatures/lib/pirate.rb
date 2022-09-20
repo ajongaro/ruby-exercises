@@ -32,5 +32,4 @@ class Pirate
     return false if @loot < 500
     true
   end
-
 end

@@ -1,7 +1,4 @@
 # this does not work
-
-
-
 class Lovisa
   attr_accessor :title, :characteristics
 

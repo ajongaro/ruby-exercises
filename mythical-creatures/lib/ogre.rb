@@ -42,6 +42,5 @@ class Human
 
   def knocked_out?
     @knocked
-
   end
 end
